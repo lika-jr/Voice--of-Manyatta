@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Donate to Save a Girl</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('assets/hope.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .donate-box {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 40px;
+      border-radius: 20px;
+      max-width: 700px;
+      width: 100%;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .donate-box h1 {
+      color: gold;
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+
+    .donate-box p {
+      font-size: 1.1rem;
+      margin-bottom: 25px;
+      line-height: 1.6;
+    }
+
+    .pay-details {
+      background: #fff;
+      color: #000;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 30px;
+      text-align: left;
+    }
+
+    .pay-details h2 {
+      color: #222;
+      margin-bottom: 10px;
+    }
+
+    .pay-details ul {
+      list-style: decimal;
+      padding-left: 20px;
+    }
+
+    .pay-details ul li {
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: darkgreen;
+    }
+
+    .btn-donate {
+      background: gold;
+      color: #000;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.1rem;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn-donate:hover {
+      background: #e0c200;
+    }
+
+    @media (max-width: 600px) {
+      .donate-box {
+        padding: 25px;
+      }
+
+      .btn-donate {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="donate-box">
+    <h1><i class="fas fa-hand-holding-heart"></i> Donate to Save a Girl</h1>
+    <p>Your support helps end GBV and protect vulnerable girls through safe houses, education, and empowerment initiatives.</p>
+
+    <div class="pay-details">
+      <h2>M-PESA Paybill Instructions</h2> 
+      <ul>
+        <li>Go to your M-PESA menu</li>
+        <li>Select <span class="highlight">Lipa na M-PESA</span></li>
+        <li>Select <span class="highlight">Paybill</span></li>
+        <li>Enter Business Number: <span class="highlight">123456</span></li>
+        <li>Enter Account Name: <span class="highlight"> SAVE A GIRL</span></li>
+        <li>Enter the amount you'd like to donate</li>
+        <li>Enter your M-PESA PIN and press OK</li>
+      </ul>
+    </div>
+
+    <button class="btn-donate" onclick="alert('Use Paybill 123456 and Account SAVEGIRL to donate via M-PESA.')">
+      DONATE NOW
+    </button>
+  </div>
+</body>
+</html>
