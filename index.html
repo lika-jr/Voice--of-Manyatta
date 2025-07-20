@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Voice of the Manyatta</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: #fffef9;
+      color: #333;
+    }
+    header {
+      background-color: #005f00; /* dark green */
+      color: #FFD700;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header img {
+      height: 80px;
+      border-radius: 8px;
+    }
+    .title-section {
+      text-align: center;
+      flex-grow: 1;
+    }
+    .title-section h1 {
+      font-family: 'Merriweather', serif;
+      font-size: 2.5em;
+      margin: 0;
+    }
+    .title-section p {
+      font-style: italic;
+      font-size: 1.1em;
+      color: #FFD700;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #333;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #FFD700;
+    }
+
+    .hero {
+      background: url('assets/samburu2.jpg') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+      position: relative;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      top:0; left:0; right:0; bottom:0;
+      background: rgba(0,0,0,0.5);
+    }
+    .hero h2 {
+      position: relative;
+      font-size: 2em;
+      color: #FFD700;
+      z-index: 1;
+    }
+    .hero p {
+      position: relative;
+      z-index: 1;
+      font-size: 1.2em;
+      max-width: 700px;
+      margin: 10px auto;
+    }
+
+    .cta-buttons {
+      margin-top: 30px;
+      z-index: 1;
+      position: relative;
+    }
+    .cta-buttons a {
+      background-color: #FFD700;
+      color: #333;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 30px;
+      margin: 10px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    .cta-buttons a:hover {
+      background-color: #fff8c0;
+    }
+
+    .slideshow {
+      background: #f9f9f9;
+      padding: 40px 20px;
+      text-align: center;
+      color: #444;
+    }
+    .slideshow h2 {
+      color: #005f00;
+    }
+    .quote {
+      font-size: 1.2em;
+      font-style: italic;
+      margin: 20px auto;
+      max-width: 800px;
+      color: #555;
+      animation: fade 10s infinite;
+    }
+    @keyframes fade {
+      0%,100% { opacity: 0; }
+      10%,90% { opacity: 1; }
+    }
+
+    .mission {
+      background-color: #005f00;
+      color: #FFD700;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .mission h2 {
+      font-size: 2em;
+    }
+    .stats {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-top: 30px;
+    }
+    .stat {
+      font-size: 1.5em;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px 30px;
+      border-radius: 12px;
+      transition: transform 0.3s;
+    }
+    .stat:hover {
+      transform: scale(1.05);
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    footer {
+      background: #222;
+      color: #FFD700;
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      flex-wrap: wrap;
+    }
+    footer div {
+      font-size: 0.95em;
+      margin: 5px 10px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+      }
+      .stats {
+        flex-direction: column;
+        align-items: center;
+      }
+      footer {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="assets/logo.jpg" alt="Logo" />
+    <div class="title-section">
+      <h1>Voice of the Manyatta</h1>
+      <p>End the act. Empower the Girl.</p>
+    </div>
+    <img src="assets/naisula.jpg" alt="Naisula Lesuuda" />
+  </header>
+
+  <nav>
+    <a href="#"><i class="fas fa-home"></i> Home</a>
+    <a href="about.html"><i class="fas fa-users"></i> About</a>
+    <a href="safehouses.html"><i class="fas fa-heart"></i> Safe Houses</a>
+    <a href="stories.html"><i class="fas fa-book-open"></i> Stories</a>
+      <a href="report.html"><i class="fas fa-bullhorn"></i> Report</a>
+    <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+    <a href="stopGBV.html" style="color: red;"><i class="fas fa-hand-paper"></i> Stop GBV</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Protecting Samburu Girls</h2>
+    <p>We stand united against harmful practices like   GBV and Early teen pregnancies. Together, we are rewriting the stories of our daughters, sisters, and mothers. One rescue, one voice, one community at a time. Girls deserve Dreams not Scars.</p>
+    <div class="cta-buttons">
+    
+      <a href="donate.html"><i class="fas fa-hand-holding-heart"></i> Donate to Save a Girl</a>
+
+     <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5bbqJe3nU-T0KoalddI28s1ztbPGCTx3J4ANp8UuRTG2WRg/viewform?usp=sharing&ouid=112863121050021811976" target="_blank">
+  <i class="fas fa-bullhorn"></i> Report a Case
+</a>
+
+    </div>
+  </section>
+
+ <section class="slideshow">
+  <h2 style="color: rgb(40, 211, 24);">Message from Our Matron - Hon. Naisula Lesuuda</h2>
+  <div id="quote" style="font-size: 24px; font-weight: bold;"></div>
+
+   
+      “To every girl out there — you are not alone. You are powerful, worthy, and destined to rise.”
+    </div>
+  </section>
+<section style="
+  position: relative;
+  background-image: url('assets/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 20px;
+  z-index: 1;
+">
+
+  <!-- Dark Overlay -->
+  <div style="
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 1;
+  "></div>
+
+  <!-- Content -->
+  <div style="
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+  ">
+    <h2 style="color: #FFD700; font-size: 36px; margin-bottom: 20px;">Our Mission</h2>
+
+    <p style="color: #FFEFD0; font-size: 20px; line-height: 1.6; font-weight: 500; margin-bottom: 50px;">
+      Empowering Samburu and Maasai Girls to live free from early pregnancies, GBV, and child marriage.
+    </p>
+
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px;">
+      <!-- Stat 1 -->
+      <div style="text-align: center; width: 150px;">
+        <div style="
+          background-color: #FFD700;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto 10px;">
+          <i class="fas fa-child" style="font-size: 20px; color: white;"></i>
+        </div>
+        <div style="color: #FFD700; font-weight: bold;">200+ Girls Rescued</div>
+      </div>
+
+      <!-- Stat 2 -->
+      <div style="text-align: center; width: 150px;">
+        <div style="
+          background-color: #FFD700;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto 10px;">
+          <i class="fas fa-school" style="font-size: 20px; color: white;"></i>
+        </div>
+        <div style="color: #FFD700; font-weight: bold;">5+ Partners</div>
+      </div>
+
+      <!-- Stat 3 -->
+      <div style="text-align: center; width: 150px;">
+        <div style="
+          background-color: #FFD700;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto 10px;">
+          <i class="fas fa-hands-helping" style="font-size: 20px; color: white;"></i>
+        </div>
+        <div style="color: #FFD700; font-weight: bold;"> Safe Houses</div>
+      </div>
+   <div class="feature">
+  <i class="fas fa-bullhorn fa-3x" style="color: #FFD700;"></i>
+  <h3 style="color: #FFD700; font-weight: bold;">Community Awareness</h3>
+ 
+</div>
+
+   
+  </div>
+
+  </div>
+    </div>
+  </div>
+</section>
+
+</section>
+
+</section>
+
+</section>
+
+
+  <style>
+    section div[style*="transition"] {
+      cursor: pointer;
+    }
+    section div[style*="transition"]:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</section>
+
+
+  <style>
+    /* Hover effect for the boxes */
+    section div[style*="transition"] {
+      cursor: pointer;
+    }
+    section div[style*="transition"]:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</section>
+
+</section>
+
+<!-- Hover effect for icons -->
+<style>
+  .stat-icon-wrapper:hover {
+    transform: scale(1.1);
+  }
+</style>
+
+</section>
+
+<!-- Hover effect (icon grows slightly on hover) -->
+<style>
+  .stat-icon-wrapper:hover {
+    transform: scale(1.1);
+  }
+</style>
+
+</section>
+
+<!-- Add hover effect -->
+<style>
+  .stat-icon-wrapper:hover {
+    box-shadow: 0 0 20px #FFD700;
+  }
+</style>
+
+</section>
+
+<!-- Add hover effect -->
+<style>
+  .stat-icon-wrapper:hover {
+    box-shadow: 0 0 20px #6A0DAD;
+  }
+</style>
+
+</section>
+
+
+
+  <footer>
+    <div>Matron: Hon. Naisula Lesuuda</div>
+    <div>© 2025 Voice of the Manyatta. All rights reserved.</div>
+  </footer>
+
+ <script>
+const quotes = [
+  { text: "To every girl out there — you are not alone. You are powerful, worthy, and destined to rise.", color: "#FF1493" }, // DeepPink
+  { text: "Silence no longer protects. We must speak for those who can’t.", color: "#1E90FF" }, // DodgerBlue
+  { text: "Every girl has the right to a childhood free from fear.", color: "#32CD32" }, // LimeGreen
+  { text: "Education is the tool. Empowerment is the goal.", color: "#FFA500" }, // Orange
+  { text: "When girls are safe, communities are strong.", color: "#800080" }, // Purple
+
+  // Newly added quotes (8, 11, 12, 13)
+  { text: "Silence fuels abuse. Speaking out breaks the cycle.", color: "#DC143C" }, // Crimson
+  { text: "No more pain. No more silence. No more cuts.", color: "#FF8C00" }, // DarkOrange
+  { text: "Culture should never come at the cost of a child’s body.", color: "#4682B4" }, // SteelBlue
+  { text: "Her body, her rights. Always.", color: "#20B2AA" } // LightSeaGreen
+];
+
+
+
+  let index = 0;
+  const quoteElement = document.getElementById("quote");
+
+  function updateQuote() {
+    quoteElement.textContent = quotes[index].text;
+    quoteElement.style.color = quotes[index].color;
+    index = (index + 1) % quotes.length;
+  }
+
+  updateQuote();
+  setInterval(updateQuote, 5000);
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
